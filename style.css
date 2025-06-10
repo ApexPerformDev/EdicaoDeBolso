@@ -1,0 +1,1145 @@
+/* ==========================================================================
+   Configurações globais
+   ========================================================================== */
+:root {
+    --color-dark-blue: #0f0d2c;
+    --color-orange: #ff6c00;
+    --color-pink: #ef0067;
+    --color-white: #ffffff;
+    --color-yellow: #FFDD00;
+    --color-blue: #00214D;
+    --color-bg: #052A5B;
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* ==========================================================================
+   ESTRUTURA BASE
+   ========================================================================== */
+body {
+    background: var(--color-bg);
+    font-family: var(--font-main);
+    margin: 0;
+}
+
+.secaoHero {
+    background: url(/src/bg1.png);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.logo {
+    max-width: 69px;
+    max-height: 99px;
+}
+
+.top-bar {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-bar #countdown-hero {
+    font-weight: 900;
+}
+
+.hero {
+    background-image: url('src/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 0 0 100px 100px;
+}
+
+.hero-grid-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+}
+
+.hero-content {
+    color: var(--color-white);
+    text-align: left;
+}
+
+.hero-content .logo {
+    width: 160px;
+    margin-bottom: 1px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero-content .highlight {
+    color: var(--color-yellow);
+}
+
+.hero-content .subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 700px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 18px 45px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.secure-purchase {
+    font-size: 0.8rem;
+    margin-top: 15px;
+    opacity: 0.8;
+}
+
+.pain-point-section {
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+    margin-top: -1px;
+}
+
+.pain-point-section h2 {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.separator-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-pink);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23FFDD00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ==========================================================================
+    A SEÇÃO 'FALTA DE CRIATIVIDADE'
+   ========================================================================== */
+.info-box-wrapper {
+    position: relative;
+    margin-top: 50px;
+}
+
+.separator-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-pink);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23FFDD00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 50px 40px 25px 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: var(--color-white);
+}
+
+/* ==========================================================================
+   SEÇÃO 'CHEGA DE PERDER TEMPO'
+   ========================================================================== */
+
+.timeDificulties {
+    background-color: var(--color-dark-blue) !important;
+    background: url(/src/bg2.png);
+}
+
+.time-saver-section {
+    background-color: var(--color-white);
+    border-radius: 0 0 25px 25px;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.ticker-wrap {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    padding: 15px 0;
+    white-space: nowrap;
+}
+
+.ticker-content {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-content span {
+    margin-right: 40px;
+}
+
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.time-saver-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.time-saver-text {
+    grid-column: 1 / 2;
+    position: relative;
+    z-index: 2;
+}
+
+.time-saver-text h2 {
+    color: var(--color-blue);
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.time-saver-text h2 .highlight-pink {
+    color: var(--color-pink);
+}
+
+.time-saver-text p {
+    color: var(--color-blue);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.time-saver-text p strong {
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+.time-saver-image {
+    position: absolute;
+    z-index: 1;
+    width: 45%;
+    max-width: 700px;
+    right: 5rem;
+    bottom: 3rem;
+    /* O valor negativo empurra o relógio para fora da caixa */
+}
+
+.time-saver-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ==========================================================================
+   SEÇÃO 'DIFICULDADES'
+   ========================================================================== */
+
+
+
+.difficulties-section {
+    padding: 100px 20px;
+    text-align: center;
+
+}
+
+.difficulties-section h2 {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.difficulties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+
+.difficulty-card {
+    background-color: #1c1a3a;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.difficulty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.difficulty-card h3 {
+    color: var(--color-white);
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.difficulty-card p {
+    color: #d1d1d1;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.difficulties-cta {
+    margin-top: 20px;
+}
+
+.depoimentosModulos{
+    background: url(src/bg3.png);
+}
+
+.depoimentos {
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 0 60px 0;
+}
+
+
+
+.titulo-secao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.grid-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.video-item {
+    border: 10px solid #ff7a21;
+    border-radius: 20px;
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #000;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.secao-modulos {
+    display: flex;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+
+.titulo-principal {
+    color: var(--color-white);
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+.grid-modulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+.card-modulo {
+    background-color: #11263e;
+    border-radius: 12px;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-modulo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-conteudo {
+    padding: 25px;
+}
+
+.etiqueta-modulo {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-yellow);
+    text-transform: uppercase;
+}
+
+.card-conteudo h3 {
+    font-size: 1.6rem;
+    margin: 5px 0 10px 0;
+    color: #ffffff;
+}
+
+.card-conteudo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cdd8e8;
+    /* Cor do texto descritivo */
+    margin: 0;
+}
+
+/* Estilo específico para o card claro */
+.card-claro {
+    background-color: #ffffff;
+}
+
+/* Sobrescreve as cores para o texto do card claro */
+.card-claro .etiqueta-modulo {
+    color: #555555;
+}
+
+.card-claro .card-conteudo h3 {
+    color: var(--color-blue);
+}
+
+.card-claro .card-conteudo p {
+    color: var(--color-blue);
+}
+
+/* Botão de Call-to-Action (CTA) */
+.botao-cta {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #ffa533;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.5);
+}
+
+/* ==========================================================================
+   OFERTAS
+   ========================================================================== */
+
+.secao-oferta {
+    position: relative;
+    background: url(src/bg4.png);
+    background-color: #0d122b;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    /* Evita que elementos vazem e criem barras de rolagem */
+}
+
+/* Barra rosa superior */
+.header-fixo {
+    background-color: #e6007e;
+    color: #ffffff;
+    padding: 12px 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* Impede que o texto quebre a linha */
+    overflow: hidden;
+    /* Essencial: esconde o texto que sai da tela */
+    display: flex;
+    /* Alinha o wrapper interno */
+}
+
+/* O container que será animado */
+.ticker-wrapper {
+    display: flex;
+    /* Coloca todos os spans em linha */
+    flex-shrink: 0;
+    /* Impede que o container encolha */
+
+    /* A animação é aplicada AQUI! */
+    animation: scroll-ticker 30s linear infinite;
+}
+
+/* Estilo para cada item de texto */
+.texto-item {
+    margin: 0 20px;
+    font-size: 1rem;
+    /* Ajuste o tamanho da fonte se necessário */
+}
+
+/* A animação (Keyframes) */
+@keyframes scroll-ticker {
+    0% {
+        /* Começa na posição original */
+        transform: translateX(0%);
+    }
+
+    100% {
+        /* Termina movido para a esquerda pelo tamanho exato da primeira metade do conteúdo */
+        /* Como duplicamos o conteúdo, -50% cria o loop perfeito */
+        transform: translateX(-50%);
+    }
+}
+
+/* Container que centraliza o conteúdo e segura os elementos flutuantes */
+.container-oferta {
+    position: relative;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Caixa de conteúdo principal com efeito de vidro */
+.caixa-principal {
+    position: relative;
+    z-index: 10;
+    /* Garante que a caixa fique acima do fundo */
+    max-width: 650px;
+    background-color: rgba(13, 18, 43, 0.7);
+    /* Fundo semi-transparente */
+    border: 2px solid #3c2a6d;
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+    backdrop-filter: blur(8px);
+    /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(8px);
+    /* Suporte para Safari */
+}
+
+.caixa-principal h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 15px 0;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+    color: #cdd8e8;
+}
+
+/* Lista de vantagens */
+.lista-vantagens {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px auto;
+    text-align: left;
+    display: inline-block;
+    /* Faz a lista se ajustar ao conteúdo */
+}
+
+.lista-vantagens li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.icone-check {
+    width: 24px;
+    height: 24px;
+    background-color: #e6007e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-check svg {
+    width: 16px;
+    height: 16px;
+}
+
+.texto-final {
+    font-style: italic;
+    color: #cdd8e8;
+    margin: 0;
+}
+
+/* Posicionamento dos Elementos Flutuantes */
+.elemento-flutuante {
+    position: absolute;
+    z-index: 5;
+    transition: transform 0.3s ease;
+}
+
+.secao-oferta:hover .elemento-flutuante {
+    transform: translateY(-10px);
+    /* Leve animação no hover da seção */
+}
+
+.camera-1 {
+    top: 50px;
+    left: 10%;
+    width: 150px;
+    filter: blur(3px);
+    /* Efeito de desfoque */
+}
+
+.chama-1 {
+    bottom: 80px;
+    left: 20%;
+    width: 80px;
+}
+
+.camera-2 {
+    bottom: 60px;
+    right: 12%;
+    width: 180px;
+}
+
+.chama-2 {
+    top: 120px;
+    right: 15%;
+    width: 100px;
+}
+
+/* ==========================================================================
+   Garantia
+   ========================================================================== */
+.garantiaFinal{
+    background: url(src/bg4.png);
+}
+
+
+.secao-garantia {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* A caixa rosa principal */
+.caixa-garantia {
+    margin: 0 auto;
+    background-color: #e6007e;
+    /* Usando a mesma textura sutil do fundo, mas sobre o rosa */
+    background-image: url('https://uploads-ssl.webflow.com/5e536551de9ffa522543325c/5e536551de9ffad1d6433276_topography.svg');
+    background-blend-mode: overlay;
+    background-size: cover;
+    border-radius: 25px;
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* Espaço entre o selo e o texto */
+}
+
+/* O selo branco da garantia (coluna da esquerda) */
+.selo-garantia {
+    border: 3px solid #ffffff;
+    padding: 20px 30px;
+    text-align: center;
+    flex-shrink: 0;
+    /* Impede que o selo encolha */
+}
+
+.texto-selo {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.linha-superior {
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
+}
+
+.linha-inferior {
+    display: block;
+    padding-top: 10px;
+}
+
+/* Descrição da garantia (coluna da direita) */
+.descricao-garantia {
+    color: #ffffff;
+}
+
+.descricao-garantia p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 400px;
+    margin: 0 0 15px 0;
+}
+
+.estrelas-avaliacao {
+    display: flex;
+    gap: 5px;
+}
+
+.estrela {
+    width: 28px;
+    height: 28px;
+    color: #ffd700;
+    /* Cor amarela das estrelas */
+}
+
+
+/* ==========================================================================
+   FINAL
+   ========================================================================== */
+
+.secao-chamada-final {
+    width: 100%;
+}
+
+.container-chamada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    border-radius: 20px;
+    gap: 80px;
+
+}
+
+/* Estilo do badge "Edição de Bolso" */
+.badge-edicao {
+    flex-shrink: 0;
+}
+
+.badge-edicao img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilo do conteúdo de texto à direita */
+.chamada-conteudo {
+    text-align: left;
+    max-width: 600px;
+}
+
+.chamada-conteudo h1 {
+    color: var(--color-white);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.texto-destaque {
+    color: #ffc700;
+    /* Cor amarela para "DOMINE A EDIÇÃO" */
+}
+
+/* Estilo do botão CTA (reutilizando o estilo anterior) */
+.botao-cta {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 50px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.botao-cta:hover {
+    background-color: #ffa533;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 140, 0, 0.5);
+}
+
+
+
+/* ==========================================================================
+   SEÇÃO RESPONSIVA
+   ========================================================================== */
+@media (max-width: 992px) {
+    .hero-grid-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        background-color: rgba(15, 13, 44, 0.5);
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    .time-saver-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .difficulties-grid {
+        /* 2 colunas em tablets */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ==========================================================================
+    A SEÇÃO RESPONSIVA
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .hero {
+        background-position: 70% center;
+
+    }
+
+    .hero-grid-container {
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+
+    }
+
+    .hero-content {
+        text-align: center;
+
+        max-width: 600px;
+        background-color: rgba(15, 13, 44, 0.5);
+
+        padding: 30px;
+        border-radius: 15px;
+    }
+
+    .time-saver-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .time-saver-image {
+        margin-top: 40px;
+        order: -1;
+    }
+
+    .grid-videos {
+        /* Permite que apenas 2 vídeos fiquem lado a lado */
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .depoimentos {
+        padding: 20px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 1.1rem;
+        /* Diminui o título em telas de celular */
+        text-align: center;
+    }
+
+    .video-item {
+        width: 100%;
+        /* Faz o vídeo ocupar a largura total */
+        max-width: 300px;
+        height: 450px;
+        /* Ajusta a altura */
+    }
+
+    .grid-modulos {
+        grid-template-columns: 1fr;
+        /* Faz os cards ficarem um abaixo do outro */
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+
+    .card-conteudo h3 {
+        font-size: 1.4rem;
+    }
+
+    .elemento-flutuante {
+        display: none;
+    }
+
+    .caixa-principal h1 {
+        font-size: 1.8rem;
+    }
+
+    .caixa-garantia {
+        flex-direction: column;
+        /* Coloca um item abaixo do outro */
+        gap: 30px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .descricao-garantia p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .estrelas-avaliacao {
+        justify-content: center;
+        /* Centraliza as estrelas */
+    }
+
+    .container-hero {
+        flex-direction: column;
+        /* Coloca o badge acima do texto */
+        text-align: center;
+        padding: 60px;
+    }
+
+    .badge-edicao {
+        margin-bottom: 40px;
+        max-width: 200px;
+        /* Reduz o tamanho do badge em telas menores */
+    }
+
+    .hero-conteudo {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 2.5rem;
+    }
+
+    .botao-cta {
+        font-size: 1.1rem;
+        padding: 15px 40px;
+    }
+
+    .container-chamada {
+        flex-direction: column;
+        /* Coloca o badge acima do texto */
+        text-align: center;
+        padding: 60px;
+    }
+
+    .badge-edicao {
+        margin-bottom: 40px;
+        max-width: 200px;
+        /* Reduz o tamanho do badge em telas menores */
+    }
+
+    .chamada-conteudo {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .chamada-conteudo h1 {
+        font-size: 2.5rem;
+    }
+
+    .botao-cta {
+        font-size: 1.1rem;
+        padding: 15px 40px;
+    }
+
+    .secaoHero {
+        background: url(/src/bg1.png);
+        background-position: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pain-point-section h2 {
+        font-size: 2rem;
+    }
+
+    .pain-point-section h2 {
+        font-size: 2rem;
+    }
+
+    .info-box p {
+        font-size: 1rem;
+    }
+
+    .time-saver-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .time-saver-image {
+        position: static;
+        /* Volta a ser um item normal */
+        order: -1;
+        /* Joga a imagem para cima */
+        width: 250px;
+        margin: 0 auto 40px auto;
+        /* Centraliza */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .difficulties-grid {
+        /* 1 coluna em celulares */
+        grid-template-columns: 1fr;
+    }
+
+    .info-box p {
+        font-size: 1rem;
+    }
+
+    .container-oferta {
+        padding: 60px 15px;
+    }
+
+    .caixa-principal {
+        padding: 30px 20px;
+    }
+
+    .caixa-principal h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    .lista-vantagens li {
+        font-size: 1rem;
+    }
+
+    .texto-selo {
+        font-size: 2rem;
+        /* Diminui a fonte do selo em telas pequenas */
+    }
+
+    .descricao-garantia p {
+        font-size: 1rem;
+    }
+
+    .estrela {
+        width: 24px;
+        height: 24px;
+    }
+
+    .container-hero {
+        padding: 40px 20px;
+    }
+
+    .hero-conteudo h1 {
+        font-size: 2rem;
+    }
+
+    .container-chamada {
+        padding: 40px 20px;
+    }
+
+    .chamada-conteudo h1 {
+        font-size: 2rem;
+    }
+}
