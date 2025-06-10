@@ -22,7 +22,7 @@ body {
 }
 
 .secaoHero {
-    background: url(/src/bg1.png);
+    background: url(src/bg1.png);
 }
 
 .container {
@@ -194,7 +194,7 @@ body {
 
 .timeDificulties {
     background-color: var(--color-dark-blue) !important;
-    background: url(/src/bg2.png);
+    background: url(src/bg2.png);
 }
 
 .time-saver-section {
@@ -1038,7 +1038,7 @@ body {
     }
 
     .secaoHero {
-        background: url(/src/bg1.png);
+        background: url(src/bg1.png);
         background-position: center;
     }
 }
