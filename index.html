@@ -1,391 +1,560 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edição de Bolso - Treinamento Completo</title>
 
-    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="top-bar">
-        <p>OFERTA POR TEMPO LIMITADO <span id="countdown-hero">00:15:00</span></p>
+      <p>OFERTA POR TEMPO LIMITADA <span id="countdown-hero">00:15:00</span></p>
     </div>
 
     <div class="secaoHero">
-        <section class="hero">
-            <div class="container hero-grid-container">
+      <section class="hero">
+        <div class="container hero-grid-container">
+          <div class="hero-image-mobile">
+            <img
+              src="src/hero.png"
+              alt="Allan, o criador do curso, segurando um celular"
+            />
+          </div>
 
-                <div class="hero-image-mobile">
-                    <img src="src/hero.png" alt="Allan, o criador do curso, segurando um celular">
+          <div class="hero-content">
+            <img src="src/LOGO.png" alt="Logo Edição de Bolso" class="logo" />
+
+            <h1>
+              TREINAMENTO COMPLETO PARA CRIAR
+              <span class="highlight">CONTEÚDOS PROFISSIONAIS</span>
+              <div class="mobile-icons-group">
+                <span class="mobile-text">COM SEU CELULAR!</span>
+                <div class="mobile-svg-icons">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="29"
+                    height="43"
+                    viewBox="0 0 29 43"
+                    fill="none"
+                  >
+                    <path
+                      d="M19.9375 43H9.0625C4.06544 43 0 38.9813 0 34.0417V8.95833C0 4.01871 4.06544 0 9.0625 0H19.9375C24.9346 0 29 4.01871 29 8.95833V34.0417C29 38.9813 24.9346 43 19.9375 43ZM9.0625 3.58333C6.06463 3.58333 3.625 5.99492 3.625 8.95833V34.0417C3.625 37.0051 6.06463 39.4167 9.0625 39.4167H19.9375C22.9354 39.4167 25.375 37.0051 25.375 34.0417V8.95833C25.375 5.99492 22.9354 3.58333 19.9375 3.58333H9.0625ZM18.125 34.0417C18.125 33.0527 17.313 32.25 16.3125 32.25H12.6875C11.687 32.25 10.875 33.0527 10.875 34.0417C10.875 35.0307 11.687 35.8333 12.6875 35.8333H16.3125C17.313 35.8333 18.125 35.0307 18.125 34.0417Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="38"
+                    height="43"
+                    viewBox="0 0 38 43"
+                    fill="none"
+                  >
+                    <path
+                      d="M32.184 13.2182C29.4 10.5307 26.998 8.21063 26.998 1.95406C26.998 1.39896 26.756 0.871227 26.336 0.499859C25.914 0.130446 25.35 -0.0435109 24.788 0.00926248C20.018 0.503768 10.998 3.99854 10.998 13.6815C10.998 14.0704 11.014 14.5415 11.034 15.0673C11.106 17.1 11.242 20.8841 10.024 22.1154C9.848 22.2933 9.588 22.477 9 22.477C8.636 22.477 8.398 22.3754 8.156 22.1115C6.978 20.843 6.766 17.1078 6.99 14.862C7.04 14.3597 6.89 13.8789 6.6 13.4997C6.476 13.3375 6.324 13.1909 6.146 13.0697C5.442 12.5889 4.512 12.6025 3.826 13.0853C3.534 13.2925 3.294 13.5779 3.146 13.9238L2.788 14.7663C1.544 17.6629 -0.00199806 21.2711 1.93848e-06 24.4316C0.00600194 36.0574 7.108 43 19 43C31.252 43 38 36.7532 38 25.4089C38 18.8278 34.91 15.8471 32.184 13.2182ZM18.998 39.0909C9.33 39.0909 4.002 33.8839 3.998 24.4316C3.998 24.027 4.04 23.5931 4.114 23.1416C5.488 25.9483 7.732 26.3862 8.998 26.3862C10.544 26.3862 11.894 25.8487 12.9 24.8303C15.296 22.4067 15.138 17.9072 15.03 14.9324C15.014 14.4574 14.998 14.0333 14.998 13.6815C14.998 7.49135 20.114 5.16151 23.11 4.32886C23.718 10.5405 26.706 13.4235 29.374 15.9996C31.958 18.4917 33.998 20.4619 33.998 25.4089C33.998 34.6149 29.092 39.0909 18.998 39.0909Z"
+                      fill="white"
+                    />
+                  </svg>
                 </div>
+              </div>
+            </h1>
+            <p class="subtitle">
+              Aprenda com Allan, o criador que ajuda milhares a dominar a edição
+              no celular e aumentar seu impacto digital.
+            </p>
 
-                <div class="hero-content">
-                    <img src="src/LOGO.png" alt="Logo Edição de Bolso" class="logo">
+            <a href="https://pay.kiwify.com.br/rC2HMvf" class="btn-primary"
+              >Quero Começar!</a
+            >
 
-                    <h1>TREINAMENTO COMPLETO PARA CRIAR <span class="highlight">CONTEÚDOS PROFISSIONAIS</span>
-                        <div class="mobile-icons-group">
-                            <span class="mobile-text">COM SEU CELULAR!</span>
-                            <div class="mobile-svg-icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="43" viewBox="0 0 29 43"
-                                    fill="none">
-                                    <path
-                                        d="M19.9375 43H9.0625C4.06544 43 0 38.9813 0 34.0417V8.95833C0 4.01871 4.06544 0 9.0625 0H19.9375C24.9346 0 29 4.01871 29 8.95833V34.0417C29 38.9813 24.9346 43 19.9375 43ZM9.0625 3.58333C6.06463 3.58333 3.625 5.99492 3.625 8.95833V34.0417C3.625 37.0051 6.06463 39.4167 9.0625 39.4167H19.9375C22.9354 39.4167 25.375 37.0051 25.375 34.0417V8.95833C25.375 5.99492 22.9354 3.58333 19.9375 3.58333H9.0625ZM18.125 34.0417C18.125 33.0527 17.313 32.25 16.3125 32.25H12.6875C11.687 32.25 10.875 33.0527 10.875 34.0417C10.875 35.0307 11.687 35.8333 12.6875 35.8333H16.3125C17.313 35.8333 18.125 35.0307 18.125 34.0417Z"
-                                        fill="white" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="43" viewBox="0 0 38 43"
-                                    fill="none">
-                                    <path
-                                        d="M32.184 13.2182C29.4 10.5307 26.998 8.21063 26.998 1.95406C26.998 1.39896 26.756 0.871227 26.336 0.499859C25.914 0.130446 25.35 -0.0435109 24.788 0.00926248C20.018 0.503768 10.998 3.99854 10.998 13.6815C10.998 14.0704 11.014 14.5415 11.034 15.0673C11.106 17.1 11.242 20.8841 10.024 22.1154C9.848 22.2933 9.588 22.477 9 22.477C8.636 22.477 8.398 22.3754 8.156 22.1115C6.978 20.843 6.766 17.1078 6.99 14.862C7.04 14.3597 6.89 13.8789 6.6 13.4997C6.476 13.3375 6.324 13.1909 6.146 13.0697C5.442 12.5889 4.512 12.6025 3.826 13.0853C3.534 13.2925 3.294 13.5779 3.146 13.9238L2.788 14.7663C1.544 17.6629 -0.00199806 21.2711 1.93848e-06 24.4316C0.00600194 36.0574 7.108 43 19 43C31.252 43 38 36.7532 38 25.4089C38 18.8278 34.91 15.8471 32.184 13.2182ZM18.998 39.0909C9.33 39.0909 4.002 33.8839 3.998 24.4316C3.998 24.027 4.04 23.5931 4.114 23.1416C5.488 25.9483 7.732 26.3862 8.998 26.3862C10.544 26.3862 11.894 25.8487 12.9 24.8303C15.296 22.4067 15.138 17.9072 15.03 14.9324C15.014 14.4574 14.998 14.0333 14.998 13.6815C14.998 7.49135 20.114 5.16151 23.11 4.32886C23.718 10.5405 26.706 13.4235 29.374 15.9996C31.958 18.4917 33.998 20.4619 33.998 25.4089C33.998 34.6149 29.092 39.0909 18.998 39.0909Z"
-                                        fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                    </h1>
-                    <p class="subtitle">Aprenda com Allan, o criador que ajuda milhares a dominar a edição no celular e
-                        aumentar seu impacto digital.</p>
+            <p class="secure-purchase">
+              Compra 100% segura processada pela Kiwify
+            </p>
+          </div>
+        </div>
+      </section>
 
-                    <a href="https://pay.kiwify.com.br/rC2HMvf" class="btn-primary">Quero Começar!</a>
+      <section class="pain-point-section">
+        <div class="container">
+          <h2>FALTA DE CRIATIVIDADE E DE RECURSOS PARA PRODUZIR CONTEÚDOS?</h2>
 
-                    <p class="secure-purchase">Compra 100% segura processada pela Kiwify</p>
-                </div>
+          <div class="info-box-wrapper">
+            <div class="separator-icon"></div>
+            <div class="info-box">
+              <p>
+                Com o Treinamento 'Edição de Bolso', você vai aprender sem
+                complicação.
+                <br />
+                Edite vídeos de forma rápida e eficiente.
+              </p>
             </div>
-        </section>
-
-        <section class="pain-point-section">
-            <div class="container">
-                <h2>FALTA DE CRIATIVIDADE E DE RECURSOS PARA PRODUZIR CONTEÚDOS?</h2>
-
-                <div class="info-box-wrapper">
-                    <div class="separator-icon"></div>
-                    <div class="info-box">
-                        <p>
-                            Com o Treinamento 'Edição de Bolso', você vai aprender sem complicação.
-                            <br>
-                            Edite vídeos de forma rápida e eficiente.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="timeDificulties">
-        <section class="time-saver-section">
-            <div class="ticker-wrap">
-                <div class="ticker-content">
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                    <span>EDIÇÃO DE BOLSO</span>
-                </div>
+      <section class="time-saver-section">
+        <div class="ticker-wrap">
+          <div class="ticker-content">
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+            <span>EDIÇÃO DE BOLSO</span>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="time-saver-grid">
+            <div class="time-saver-text">
+              <h2>
+                <span class="highlight-pink">CHEGA DE PERDER TEMPO</span>
+                TENTANDO ENTENDER COMO USAR FERRAMENTAS CARAS OU BUSCANDO
+                TUTORIAIS COMPLICADOS
+              </h2>
+              <p>
+                Com o Treinamento <strong>'Edição de Bolso'</strong>, você vai
+                aprender a criar conteúdos profissionais usando apenas seu
+                celular e sem complicação.
+                <span class="textoPequeno"
+                  >Não importa se você é iniciante ou já tem alguma experiência,
+                  vamos te mostrar o passo a passo para editar vídeos e fotos de
+                  forma rápida e eficiente.</span
+                >
+              </p>
             </div>
 
-            <div class="container">
-                <div class="time-saver-grid">
-                    <div class="time-saver-text">
-                        <h2>
-                            <span class="highlight-pink">CHEGA DE PERDER TEMPO</span> TENTANDO ENTENDER COMO USAR
-                            FERRAMENTAS CARAS OU BUSCANDO TUTORIAIS COMPLICADOS
-                        </h2>
-                        <p>
-                            Com o Treinamento <strong>'Edição de Bolso'</strong>, você vai aprender a criar conteúdos
-                            profissionais usando apenas seu celular e sem complicação. <span class="textoPequeno">Não
-                                importa se você é iniciante ou já
-                                tem alguma experiência, vamos te mostrar o passo a passo para editar vídeos e fotos de
-                                forma
-                                rápida e eficiente.</span>
-                        </p>
-                    </div>
-
-                    <div class="time-saver-image">
-                        <img src="src/relogio.png" alt="Relógios 3D simbolizando economia de tempo">
-                    </div>
-                </div>
+            <div class="time-saver-image">
+              <img
+                src="src/relogio.png"
+                alt="Relógios 3D simbolizando economia de tempo"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="difficulties-section">
-            <div class="containerDificulties">
-                <h2>QUAL A SUA DIFICULDADE?</h2>
+      <section class="difficulties-section">
+        <div class="containerDificulties">
+          <h2>QUAL A SUA DIFICULDADE?</h2>
 
-                <div class="difficulties-grid">
-                    <div class="difficulty-card">
-                        <img src="src/emoji1.png" alt="Ícone de Criatividade" class="card-icon">
-                        <h3>Falta de criatividade?</h3>
-                        <p>Você vai desbloquear sua criatividade e explorar novas formas de criar conteúdo.</p>
-                    </div>
-
-                    <div class="difficulty-card">
-                        <img src="src/monitor.png" alt="Ícone de Equipamentos" class="card-icon">
-                        <h3>Dificuldade com equipamentos caros?</h3>
-                        <p>Você vai aprender a produzir conteúdos incríveis apenas com seu celular.</p>
-                    </div>
-
-                    <div class="difficulty-card">
-                        <img src="src/emoji.png" alt="Ícone de Renda Extra" class="card-icon">
-                        <h3>Quer uma renda extra?</h3>
-                        <p>O treinamento te mostra um mercado cheio de oportunidades, como cobrar, onde encontrar
-                            clientes e
-                            como oferecer serviços simples que têm alta demanda.</p>
-                    </div>
-
-                    <div class="difficulty-card">
-                        <img src="src/tempo.png" alt="Ícone de Tempo" class="card-icon">
-                        <h3>Leva muito tempo pra editar?</h3>
-                        <p>Te mostro atalhos que aceleram seu trabalho e estratégias pra editar mais rápido, com mais
-                            qualidade e menos esforço.</p>
-                    </div>
-                </div>
-
-                <a href="https://pay.kiwify.com.br/rC2HMvf" class="btn-primary difficulties-cta">Quero Começar!</a>
+          <div class="difficulties-grid">
+            <div class="difficulty-card">
+              <img
+                src="src/emoji1.png"
+                alt="Ícone de Criatividade"
+                class="card-icon"
+              />
+              <h3>Falta de criatividade?</h3>
+              <p>
+                Você vai desbloquear sua criatividade e explorar novas formas de
+                criar conteúdo.
+              </p>
             </div>
-        </section>
+
+            <div class="difficulty-card">
+              <img
+                src="src/monitor.png"
+                alt="Ícone de Equipamentos"
+                class="card-icon"
+              />
+              <h3>Dificuldade com equipamentos caros?</h3>
+              <p>
+                Você vai aprender a produzir conteúdos incríveis apenas com seu
+                celular.
+              </p>
+            </div>
+
+            <div class="difficulty-card">
+              <img
+                src="src/emoji.png"
+                alt="Ícone de Renda Extra"
+                class="card-icon"
+              />
+              <h3>Quer uma renda extra?</h3>
+              <p>
+                O treinamento te mostra um mercado cheio de oportunidades, como
+                cobrar, onde encontrar clientes e como oferecer serviços simples
+                que têm alta demanda.
+              </p>
+            </div>
+
+            <div class="difficulty-card">
+              <img src="src/tempo.png" alt="Ícone de Tempo" class="card-icon" />
+              <h3>Leva muito tempo pra editar?</h3>
+              <p>
+                Te mostro atalhos que aceleram seu trabalho e estratégias pra
+                editar mais rápido, com mais qualidade e menos esforço.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="https://pay.kiwify.com.br/rC2HMvf"
+            class="btn-primary difficulties-cta"
+            >Quero Começar!</a
+          >
+        </div>
+      </section>
     </div>
 
     <div class="depoimentosModulos">
-        <section class="depoimentos">
-            <div class="container">
-                <div class="titulo-secao">
-                    <svg class="icone-titulo" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M20.4 3.6C18.24 1.44 15.24 0.6 12 0.6C8.76 0.6 5.76 1.44 3.6 3.6C1.44 5.76 0.6 8.76 0.6 12C0.6 15.24 1.44 18.24 3.6 20.4C5.76 22.56 8.76 23.4 12 23.4C15.24 23.4 18.24 22.56 20.4 20.4C22.56 18.24 23.4 15.24 23.4 12C23.4 8.76 22.56 5.76 20.4 3.6ZM9.96 17.4L5.4 12.84L7.08 11.16L9.96 14.04L16.92 7.08L18.6 8.76L9.96 17.4Z"
-                            fill="#F74279" />
-                    </svg>
-                    <h2>NÃO ACREDITE EM MIM, ACREDITE NELES.</h2>
-                </div>
+      <section class="depoimentos">
+        <div class="container">
+          <div class="titulo-secao">
+            <svg
+              class="icone-titulo"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.4 3.6C18.24 1.44 15.24 0.6 12 0.6C8.76 0.6 5.76 1.44 3.6 3.6C1.44 5.76 0.6 8.76 0.6 12C0.6 15.24 1.44 18.24 3.6 20.4C5.76 22.56 8.76 23.4 12 23.4C15.24 23.4 18.24 22.56 20.4 20.4C22.56 18.24 23.4 15.24 23.4 12C23.4 8.76 22.56 5.76 20.4 3.6ZM9.96 17.4L5.4 12.84L7.08 11.16L9.96 14.04L16.92 7.08L18.6 8.76L9.96 17.4Z"
+                fill="#F74279"
+              />
+            </svg>
+            <h2>NÃO ACREDITE EM MIM, ACREDITE NELES.</h2>
+          </div>
 
-                <div class="grid-videos">
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/bNUZ56XPXec?si=kixL7IdPRRgBsgpD" title="Depoimento 1"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/fnXD5IvWGl0" title="Depoimento 2" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/GCjVcQ1PNCI" title="Depoimento 3" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/N2jYTiY9RXM" title="Depoimento 4" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
+          <div class="grid-videos">
+            <div class="video-item">
+              <iframe
+                src="https://www.youtube.com/embed/bNUZ56XPXec?si=kixL7IdPRRgBsgpD"
+                title="Depoimento 1"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-        </section>
 
-        <section class="secao-modulos">
-            <div class="container">
-                <h2 class="titulo-principal">Com o treinamento, você terá acesso:</h2>
-
-                <div class="grid-modulos">
-                    <div class="card-modulo card-claro">
-                        <div class="card-imagem">
-                            <img src="src/modulo1.png" alt="O Básico que Funciona">
-                        </div>
-                        <div class="card-conteudo">
-                            <span class="etiqueta-modulo">Módulo 01</span>
-                            <h3>O Básico que Funciona</h3>
-                            <p>Edição simples e funcional para você já começar a produzir seus conteúdos com boas
-                                referências e noção de mercado.</p>
-                        </div>
-                    </div>
-
-                    <div class="card-modulo">
-                        <div class="card-imagem">
-                            <img src="src/modulo2.png" alt="A Fórmula da Criatividade">
-                        </div>
-                        <div class="card-conteudo">
-                            <span class="etiqueta-modulo">Módulo 02</span>
-                            <h3>A Fórmula da Criatividade</h3>
-                            <p>Edição avançada que envolve técnicas de animação, transições e truques com inteligência
-                                artificial.</p>
-                        </div>
-                    </div>
-
-                    <div class="card-modulo">
-                        <div class="card-imagem">
-                            <img src="src/modulo3.png" alt="Materiais Secretos">
-                        </div>
-                        <div class="card-conteudo">
-                            <span class="etiqueta-modulo">Módulo 03</span>
-                            <h3>Materiais Secretos</h3>
-                            <p>Acesso exclusivo aos materiais que vão te alavancar na produção de conteúdo e no mercado.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card-modulo">
-                        <div class="card-imagem">
-                            <img src="src/modulo4.png" alt="Bônus Exclusivos">
-                        </div>
-                        <div class="card-conteudo">
-                            <span class="etiqueta-modulo">Bônus</span>
-                            <h3>Bônus Exclusivos</h3>
-                            <p>que vão abranger sua área de conhecimento, da oratória aos movimentos de câmera.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <a href="https://pay.kiwify.com.br/rC2HMvf" class="botao-cta">Quero Começar!</a>
+            <div class="video-item">
+              <iframe
+                src="https://www.youtube.com/embed/fnXD5IvWGl0"
+                title="Depoimento 2"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-        </section>
+
+            <div class="video-item">
+              <iframe
+                src="https://www.youtube.com/embed/GCjVcQ1PNCI"
+                title="Depoimento 3"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="video-item">
+              <iframe
+                src="https://www.youtube.com/embed/N2jYTiY9RXM"
+                title="Depoimento 4"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao-modulos">
+        <div class="container">
+          <h2 class="titulo-principal">Com o treinamento, você terá acesso:</h2>
+
+          <div class="grid-modulos">
+            <div class="card-modulo card-claro">
+              <div class="card-imagem">
+                <img src="src/modulo1.png" alt="O Básico que Funciona" />
+              </div>
+              <div class="card-conteudo">
+                <span class="etiqueta-modulo">Módulo 01</span>
+                <h3>O Básico que Funciona</h3>
+                <p>
+                  Edição simples e funcional para você já começar a produzir
+                  seus conteúdos com boas referências e noção de mercado.
+                </p>
+              </div>
+            </div>
+
+            <div class="card-modulo">
+              <div class="card-imagem">
+                <img src="src/modulo2.png" alt="A Fórmula da Criatividade" />
+              </div>
+              <div class="card-conteudo">
+                <span class="etiqueta-modulo">Módulo 02</span>
+                <h3>A Fórmula da Criatividade</h3>
+                <p>
+                  Edição avançada que envolve técnicas de animação, transições e
+                  truques com inteligência artificial.
+                </p>
+              </div>
+            </div>
+
+            <div class="card-modulo">
+              <div class="card-imagem">
+                <img src="src/modulo3.png" alt="Materiais Secretos" />
+              </div>
+              <div class="card-conteudo">
+                <span class="etiqueta-modulo">Módulo 03</span>
+                <h3>Materiais Secretos</h3>
+                <p>
+                  Acesso exclusivo aos materiais que vão te alavancar na
+                  produção de conteúdo e no mercado.
+                </p>
+              </div>
+            </div>
+
+            <div class="card-modulo">
+              <div class="card-imagem">
+                <img src="src/modulo4.png" alt="Bônus Exclusivos" />
+              </div>
+              <div class="card-conteudo">
+                <span class="etiqueta-modulo">Bônus</span>
+                <h3>Bônus Exclusivos</h3>
+                <p>
+                  que vão abranger sua área de conhecimento, da oratória aos
+                  movimentos de câmera.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://pay.kiwify.com.br/rC2HMvf" class="botao-cta"
+            >Quero Começar!</a
+          >
+        </div>
+      </section>
     </div>
 
     <section class="secao-oferta">
-        <div class="header-fixo">
-            <div class="ticker-wrapper">
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-                <span class="texto-item">EDIÇÃO DE BOLSO</span>
-            </div>
+      <div class="header-fixo">
+        <div class="ticker-wrapper">
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
+          <span class="texto-item">EDIÇÃO DE BOLSO</span>
         </div>
+      </div>
 
-        <div class="container-oferta">
-            <img src="src/cam1.png" alt="Ícone de câmera vintage" class="elemento-flutuante camera-1">
-            <img src="src/foguinho2.png" alt="Ícone de chama" class="elemento-flutuante chama-1">
-            <img src="src/foguinho1.png" alt="Ícone de câmera vintage" class="elemento-flutuante camera-2">
-            <img src="src/cam2.png" alt="Ícone de chama" class="elemento-flutuante chama-2">
+      <div class="container-oferta">
+        <img
+          src="src/cam1.png"
+          alt="Ícone de câmera vintage"
+          class="elemento-flutuante camera-1"
+        />
+        <img
+          src="src/foguinho2.png"
+          alt="Ícone de chama"
+          class="elemento-flutuante chama-1"
+        />
+        <img
+          src="src/foguinho1.png"
+          alt="Ícone de câmera vintage"
+          class="elemento-flutuante camera-2"
+        />
+        <img
+          src="src/cam2.png"
+          alt="Ícone de chama"
+          class="elemento-flutuante chama-2"
+        />
 
+        <div class="caixa-principal">
+          <h1>
+            As vagas são limitadas e o preço de lançamento não vai durar muito!
+          </h1>
+          <p class="subtitulo">
+            Não perca a oportunidade de começar agora e transformar sua carreira
+            de criador de conteúdo.
+          </p>
 
-            <div class="caixa-principal">
-                <h1>As vagas são limitadas e o preço de lançamento não vai durar muito!</h1>
-                <p class="subtitulo">Não perca a oportunidade de começar agora e transformar sua carreira de criador de
-                    conteúdo.</p>
+          <ul class="lista-vantagens">
+            <li>
+              <span class="icone-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </span>
+              O Básico que Funciona
+            </li>
+            <li>
+              <span class="icone-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </span>
+              A Fórmula da Criatividade
+            </li>
+            <li>
+              <span class="icone-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </span>
+              Materiais Secretos
+            </li>
+            <li>
+              <span class="icone-check">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </span>
+              Bônus Exclusivos
+            </li>
+          </ul>
 
-                <ul class="lista-vantagens">
-                    <li>
-                        <span class="icone-check">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
-                                    fill="#ffffff" />
-                            </svg>
-                        </span>
-                        O Básico que Funciona
-                    </li>
-                    <li>
-                        <span class="icone-check">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
-                                    fill="#ffffff" />
-                            </svg>
-                        </span>
-                        A Fórmula da Criatividade
-                    </li>
-                    <li>
-                        <span class="icone-check">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
-                                    fill="#ffffff" />
-                            </svg>
-                        </span>
-                        Materiais Secretos
-                    </li>
-                    <li>
-                        <span class="icone-check">
-                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.78 9.7L11.11 15.37C10.97 15.51 10.78 15.59 10.58 15.59C10.38 15.59 10.19 15.51 10.05 15.37L7.22 12.54C6.93 12.25 6.93 11.77 7.22 11.48C7.51 11.19 7.99 11.19 8.28 11.48L10.58 13.78L15.72 8.64C16.01 8.35 16.49 8.35 16.78 8.64C17.07 8.93 17.07 9.41 16.78 9.7Z"
-                                    fill="#ffffff" />
-                            </svg>
-                        </span>
-                        Bônus Exclusivos
-                    </li>
-                </ul>
-
-                <p class="texto-final">Inscreva-se agora antes que as vagas acabem!</p>
-            </div>
+          <p class="texto-final">
+            Inscreva-se agora antes que as vagas acabem!
+          </p>
         </div>
+      </div>
     </section>
 
     <div class="garantiaFinal">
-        <section class="secao-garantia">
-            <div class="caixa-garantia">
-                <div class="selo-garantia">
-                    <div class="texto-selo">
-                        <span class="linha-superior">Garantia</span>
-                        <span class="linha-inferior">de 7 dias</span>
-                    </div>
-                </div>
-                <div class="descricao-garantia">
-                    <p>Se você não ficar satisfeito com o curso, devolvemos o seu dinheiro sem perguntas.</p>
-                    <div class="estrelas-avaliacao">
-                        <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        </svg>
-                        <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        </svg>
-                        <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        </svg>
-                        <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        </svg>
-                        <svg class="estrela" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                        </svg>
-                    </div>
-                </div>
+      <section class="secao-garantia">
+        <div class="caixa-garantia">
+          <div class="selo-garantia">
+            <div class="texto-selo">
+              <span class="linha-superior">Garantia</span>
+              <span class="linha-inferior">de 7 dias</span>
             </div>
-        </section>
+          </div>
+          <div class="descricao-garantia">
+            <p>
+              Se você não ficar satisfeito com o curso, devolvemos o seu
+              dinheiro sem perguntas.
+            </p>
+            <div class="estrelas-avaliacao">
+              <svg
+                class="estrela"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                />
+              </svg>
+              <svg
+                class="estrela"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                />
+              </svg>
+              <svg
+                class="estrela"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                />
+              </svg>
+              <svg
+                class="estrela"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                />
+              </svg>
+              <svg
+                class="estrela"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="secao-chamada-final">
-            <div class="container-chamada">
-                <div class="badge-edicao">
-                    <img src="src/LOGO.png" alt="Selo Edição de Bolso">
-                </div>
-                <div class="chamada-conteudo">
-                    <h1>COMECE AGORA E <span class="texto-destaque">DOMINE A EDIÇÃO</span> COM SEU CELULAR!</h1>
-                    <a href="https://pay.kiwify.com.br/rC2HMvf" class="botao-cta">Quero Começar!</a>
-                </div>
-            </div>
-        </section>
+      <section class="secao-chamada-final">
+        <div class="container-chamada">
+          <div class="badge-edicao">
+            <img src="src/LOGO.png" alt="Selo Edição de Bolso" />
+          </div>
+          <div class="chamada-conteudo">
+            <h1>
+              COMECE AGORA E
+              <span class="texto-destaque">DOMINE A EDIÇÃO</span> COM SEU
+              CELULAR!
+            </h1>
+            <a href="https://pay.kiwify.com.br/rC2HMvf" class="botao-cta"
+              >Quero Começar!</a
+            >
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="script.js"></script>
-</body>
-
+    <script src="/script/script.js"></script>
+  </body>
 </html>

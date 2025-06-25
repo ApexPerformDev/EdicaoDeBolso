@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- FUNÇÃO DO CONTADOR DE TEMPO ---
-    const countdownElement = document.getElementById('countdown');
+    const countdownElement = document.getElementById('countdown-hero'); 
 
     if (countdownElement) {
         let timeInSeconds = 15 * 60; // 15 minutos
@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 countdownElement.textContent = "OFERTA ENCERRADA";
                 return;
             }
-
             timeInSeconds--;
-
             const hours = Math.floor(timeInSeconds / 3600);
             const minutes = Math.floor((timeInSeconds % 3600) / 60);
             const seconds = timeInSeconds % 60;
